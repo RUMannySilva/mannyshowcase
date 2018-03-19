@@ -1,0 +1,150 @@
+@import url("normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+body, body * {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 0.625em;
+}
+
+body {
+      font-family: 'Open Sans', arial, sans-serif;
+      font-size: 1.6rem;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 6rem;
+
+}
+/**
+ * LAYOUT HELPERS
+ */
+/* Grid */
+.row {
+  clear: both;
+  padding: 1px;
+}
+
+/** Clearfix **/
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  padding: 0 1em;
+}
+
+.col-3-4 {
+  width:75%;
+}
+
+.col-1-4 {
+  width:25%;
+}
+
+.col-1-2 {
+  width:50%;
+  float:left;
+}
+.content-wrapper {
+  max-width: 1024px;
+  width: 75%;
+  margin: auto;
+  text-align:justify;
+}
+
+/* End grid */
+/* Navigation */
+.site-navigation {
+  text-align: center;
+}
+
+.site-navigation>ul>li {
+  display: inline-block;
+  padding: 0 2em;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+
+
+}
+
+.site-navigation ul {
+    margin:0;
+}
+.site-navigation a{
+      display:inline-block;
+      color:white;
+      text-decoration: none;
+      padding:.565em;
+}
+
+.site-navigation a:hover{
+    background: #90ee90;
+}
+.site-navigation a:active{
+    text-decoration: underline;
+}
+.site-navigation a.active {
+     background: #90ee90;
+
+}
+/* End navigation */
+
+/* Site specific */
+header, footer {
+  background: #228B22;
+  color:#fff;
+}
+
+.content-container {
+  min-height: calc(100vh - 151.375px - 52px); /* full height - header height - footer height */
+}
+
+/*contact page*/
+
+
+section.contact ul {
+    list-style: none;
+}
+
+aside.contact, section.contact {
+    margin-bottom:50px;
+    margin-top: 25px;
+}
+
+i {
+    font-size:2rem;
+    padding:10px;
+}
+
+ul.contact-details {
+    padding:0;
+}
+
+
+.phone-number, a.e-mail, address{
+    display:block;
+    padding-left:40px;
+    padding-top: 10px;
+}
+
+fieldset{
+    margin:0;
+    border:none;
+}
+
+ input, textarea{
+    width:100%;
+}
+
+
+button {
+    display:block;
+}
